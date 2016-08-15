@@ -17,7 +17,7 @@
 
 	/* identification */
 	part-number = "BB-BONE-LCD5-01";
-	version = "00A1";
+	version = "00A2";
 
 	/* state the resources this cape uses */
 	exclusive-use =
