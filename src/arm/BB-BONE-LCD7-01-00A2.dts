@@ -47,14 +47,14 @@
 		"P9.15",	/* keys: gpio1_16 LEFT */
 		"P9.23",	/* keys: gpio1_17 RIGHT */
 		"P9.16",	/* keys: gpio1_19 UP */
-		"P9.30",	/* keys: gpio3_16 DOWN */
-		"P8.12",	/* keys: gpio1_12 ENTER */
+		"P9.26",	/* keys: gpio0_14 DOWN */
+		"P9.14",	/* keys: gpio1_18 ENTER */
 
 		"gpio3_19",	/* DISPEN */
 		"gpio1_28",	/* LED */ 
 		"gpio1_16",	/* LEFT */
 		"gpio1_17",	/* RIGHT */
-		"gpio1_29",	/* UP */
+		"gpio1_19",	/* UP */
 		"gpio0_14",	/* DOWN */
 		"gpio1_18",	/* ENTER */
 		"lcdc",
@@ -102,9 +102,9 @@
 				pinctrl-single,pins = <
 					BONE_P9_15 (PIN_INPUT | MUX_MODE7) /* gpmc_a0.gpio1_16 left */
 					BONE_P9_23 (PIN_INPUT | MUX_MODE7) /* gpmc_a1.gpio1_17 right*/
-					BONE_P8_26 (PIN_INPUT | MUX_MODE7) /* gpmc_a3.gpio1_29 up*/
-					BONE_P9_26 (PIN_INPUT | MUX_MODE7) /* mcasp0_axr0.gpio3_16 down */
-					BONE_P9_14 (PIN_INPUT | MUX_MODE7) /* GPIO.gpio1_13 enter*/
+					BONE_P9_16 (PIN_INPUT | MUX_MODE7) /* gpmc_a3.gpio1_19 up*/
+					BONE_P9_26 (PIN_INPUT | MUX_MODE7) /* gpio0_14 down */
+					BONE_P9_14 (PIN_INPUT | MUX_MODE7) /* GPIO.gpio1_19 enter*/
 				>;
 			};
 		};
@@ -186,7 +186,7 @@
 					debounce_interval = <50>;
 					linux,code = <103>;
 					label = "up";
-					gpios = <&gpio1 29 0x1>;
+					gpios = <&gpio1 19 0x1>;
 					gpio-key,wakeup;
 					autorepeat;
 				};
