@@ -3,7 +3,7 @@ Requirements:
 
 Step 1: Clone this repo:
 
-    git clone https://github.com/beagleboard/bb.org-overlays
+    git clone https://github.com/nickfox-taterli/bb.org-overlays
     cd ./bb.org-overlays
 
 Step 2: Verify you have the latest (patched) dtc version: (this is only for v4.1.x+ for v3.8.x dtbo's use the older version)
